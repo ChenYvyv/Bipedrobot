@@ -39,6 +39,7 @@ void initialize_mpc()
 #endif
 }
 
+// need to modify about f_max
 void setup_problem(double dt, int horizon, double mu, double f_max)
 {
   //mu = 0.6;

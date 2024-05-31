@@ -54,6 +54,7 @@ void LegController::updateData(const LowlevelState* state){
 
 }
 
+// it is important
 void LegController::updateCommand(LowlevelCmd* cmd){
 
     for (int i = 0; i < 2; i++){
@@ -105,6 +106,7 @@ void LegController::updateCommand(LowlevelCmd* cmd){
    
 }
 
+// need to modify
 void computeLegJacobianAndPosition(Biped& _biped, Vec5<double>& q, Mat65<double>* J_f_m, Mat35<double>* J_f, 
                                        Vec3<double>* p, int leg)
 {

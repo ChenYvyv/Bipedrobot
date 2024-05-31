@@ -4,6 +4,7 @@
  * Get quaternion, rotation matrix, angular velocity (body and world),
  * rpy, acceleration (world, body) from vector nav IMU
  */
+// to confirm whether our imu output quaternion
 void CheaterOrientationEstimator::run() {
   this->_stateEstimatorData.result->orientation[0] =
       this->_stateEstimatorData.lowState->imu.quaternion[0];
@@ -17,6 +18,7 @@ void CheaterOrientationEstimator::run() {
   this->_stateEstimatorData.result->rBody = ori::quaternionToRotationMatrix(
       this->_stateEstimatorData.result->orientation);
 
+// Tasnfering imu.gyroscope to omegaWorld
   this->_stateEstimatorData.result->omegaWorld(0) =
       this->_stateEstimatorData.lowState->imu.gyroscope[0]*1.0;
   this->_stateEstimatorData.result->omegaWorld(1) =

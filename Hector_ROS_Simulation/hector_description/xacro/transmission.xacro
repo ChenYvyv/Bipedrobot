@@ -1,3 +1,5 @@
+// need to modify, there is one linear locomotion
+
 <?xml version="1.0"?>
 
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">

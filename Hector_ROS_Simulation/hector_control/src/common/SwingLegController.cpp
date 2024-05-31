@@ -154,6 +154,7 @@ void swingLegController::computeFootDesiredPosition(){
 /******************************************************************************************************/
 /******************************************************************************************************/
 
+// need to modify
 void swingLegController::computeIK(const Vec3<double> &bodyPositionDesired, Eigen::Matrix<double, 5, 1> &jointAngles, int leg){          
 
         Vec3<double> pFoot_des_b = bodyPositionDesired;
@@ -189,6 +190,7 @@ void swingLegController::computeIK(const Vec3<double> &bodyPositionDesired, Eige
 /******************************************************************************************************/
 /******************************************************************************************************/
 
+// need to modify
 void swingLegController::setDesiredJointState(){
     for(int leg = 0; leg < nLegs; leg++){
         if(swingStates[leg] > 0){

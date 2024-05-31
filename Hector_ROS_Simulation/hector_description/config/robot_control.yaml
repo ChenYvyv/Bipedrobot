@@ -1,3 +1,5 @@
+// need to modify
+// need to confirm type
 hector_gazebo:
     # Publish all joint states -----------------------------------
     joint_state_controller:

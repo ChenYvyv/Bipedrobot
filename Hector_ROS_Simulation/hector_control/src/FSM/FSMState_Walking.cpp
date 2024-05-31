@@ -1,5 +1,6 @@
 #include "../../include/FSM/FSMState_Walking.h"
 
+// need to modify
 FSMState_Walking::FSMState_Walking(ControlFSMData *data)
                  :FSMState(data, FSMStateName::WALKING, "walking"),
                   Cmpc(0.001, 40) {}
@@ -22,6 +23,7 @@ void FSMState_Walking::enter()
     Cmpc.firstRun = true;
 }
 
+// need to modify!!!
 void FSMState_Walking::run()
 {
     _data->_legController->updateData(_data->_lowState);
